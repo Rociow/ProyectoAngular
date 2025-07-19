@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductAbout } from './product-about/product-about';
 import { ProductProducts } from './product-products/product-products';
 import { InputInteger } from './input-integer/input-integer';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     App,
@@ -21,7 +22,8 @@ import { InputInteger } from './input-integer/input-integer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

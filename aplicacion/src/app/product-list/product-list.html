@@ -23,7 +23,7 @@
                 <span>Cant: {{product.quantity}}</span>
             </td>
             <td><button class="btn btn-outline-dark btn-sm" (click)="addToCart(product)" *ngIf="product.stock>0">Añadir al carrito</button></td>
-            <td><img width="90 " class="img-thumbnail" src="assets/img/sweater.jpeg" alt="test"></td>
+            <td><img width="90" height="90" src="{{product.image}}" alt="test"></td>
         </tr>
     </tbody>
 </table>
